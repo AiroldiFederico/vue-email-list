@@ -51,7 +51,7 @@
 
                 <button type="button" class="btn btn-dark my-2" @click="attivaApi">Genera</button>
 
-                <div>{{email}}</div>
+                <div v-for="(item, index) in emails" :key="index">{{index +1}}.    {{emails[index]}}</div>
                 
             </main>
 
