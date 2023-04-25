@@ -28,6 +28,9 @@
 
         <!-- VuejS -->
         <script src="https://unpkg.com/vue@3" defer></script>
+
+        <!-- AXIOS -->
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
         
         <!-- Javascript -->
         <script src="./asset/js/main.js" defer></script>
@@ -42,11 +45,13 @@
     <body>
         <div id="app" class="col-12 d-flex justify-content-center align-items-center m-auto h-100 w-100">
 
-            <main class="">
+            <main class="d-flex flex-column justify-content-center align-items-center">
     
+                <h1>10 EMAIL</h1>
 
+                <button type="button" class="btn btn-dark my-2" @click="attivaApi">Genera</button>
 
-
+                <div>{{email}}</div>
                 
             </main>
 
